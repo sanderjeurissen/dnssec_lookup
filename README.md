@@ -16,7 +16,7 @@ The script assumes the first parameter supplied is the domainname. When no param
 
 ## Config
 
-By default the script will run the dnslookup to localhost. An alternative server can be used by changing the **NS** variable:
+By default the script will run the dns queries to localhost. An alternative server can be used by changing the **NS** variable:
 
 ```
 NS=127.0.0.1
