@@ -9,7 +9,7 @@ Simple bash script to fetch the DNS-SEC records from your nameserver, to copy/pa
 ## Usage
 
 ```bash
-dnssec_look.sh <domain>
+dnssec_lookup.sh <domain>
 ```
 
 The script assumes the first parameter supplied is the domainname. When no parameter is supplied, it will show a prompt to enter one.
