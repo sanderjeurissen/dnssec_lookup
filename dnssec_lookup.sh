@@ -1,8 +1,8 @@
 #!/bin/bash
 ############
 ##
-##   Script:            get_dnssec.sh
-##   Version:           v0.01
+##   Script:            dnssec_lookup.sh
+##   Version:           v0.02
 ##   Description:       Simple bashscript to fetch the DNS-SEC records from an nameserver
 ##   Created by:        Sander Jeurissen
 ##   Created on:        27-7-2023
@@ -15,6 +15,14 @@
 ## SETTING ##
 
 NS=127.0.0.1
+
+## Check for dig-command before we start ##
+if ! command -v dig &> /dev/null
+then
+        echo "Error !"
+        echo "dig could not be found"
+        exit 1;
+fi
 
 ## Read input for domain ##
 
